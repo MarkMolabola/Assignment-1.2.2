@@ -11,19 +11,21 @@
             //The Sum is : 55.
 
             int sum = 0;
+            Console.WriteLine("Name a Counting Number");
+            int choice = Convert.ToInt32(Console.ReadLine());
 
-            for (int i = 1; i <= 10; i++)
+            for (int i = 1; i <= choice; i++)
             {
                sum += i;
             }
 
-            Console.WriteLine("The first 10 natural number is :");
-            for (int i = 1; i <= 10; i++)
+            Console.WriteLine("The first " + choice + " natural numbers are : ");
+            for (int i = 1; i <= choice ; i++)
             {
                 Console.Write(i + " ");
             }
 
-            Console.WriteLine("\n The Sum is : " + sum);
+            Console.WriteLine("\nThe Sum is : " + sum);
         }
     }
 }
